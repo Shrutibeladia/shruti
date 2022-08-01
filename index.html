@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum scale=1.0">
+	<title>Shruti Beladia </title>
+	
+	
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+ 
+	<div class="wrapper">
+
+		<header>
+			<h3>PORT <small>folio</small></h3>
+			<ul>
+				<li text-color:white><a href="">Home</a></li>
+				<li><a href="">About Me</a></li>
+				<li><a href="">My Skills</a></li>
+				<li><a href="">Services</a></li>
+
+				<li>
+					<a href="">
+						
+						<span class="search"></span>
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAACxElEQVRYhe2VzUtUURjGf++9M9rHpsiZQqMiWuQMbURoa9HHrkyYfyCniT5AiIKIFi41iWgT5GT/gEjpSqiolkVtKh0jWlhh5UzQyjC992nhlcpGu/dWtqhndbnnPO/zu+c99xz4r78si+0cydWkWNNqRquwJtDGoOQbk/9Y2GCZjzfJ9n/+7QDpUr5NvtODaetPpr40ODOZKd74PQDqdOpKE12GzgRvniDr87DbydmpcQBLrNjiGXuAdmBHMK+73NhwDuv0fwmgbrRwIQiflqyjkqkvVis6D5suTRwVugTUAt3lTPFsbIB0Kd8m2QAwLWN/pbF4PxR0Kd9ismGg1rBDk5nem9+OO6HSR3I18p0eAMk6woYDVBqv3TM4BSDUw6NCMjJAijWtwYZ7UsnUF8OGz2uy8eNVsGfAttRK/2BkAIxDAIhri/Z8SX+/J/w+AHOsNToANAF4OHcihwdKyG4BSNYcB6AewMV9FRdg1vUCrxriAMQ/MQP57ur5Gt+1MByA7D2Ah7cpLkByZirw2tvIAGZ6AOCavzcugGfOPgChh5EBfBgKHttRZ9i2fZVyLuIwgElD3w6FKlaZsgHBOLAjXZo4GjU/Nbb2mEEWeFH+5AxGBqC5d8aVOgCELtWV8i1hw+vGCrtMughI4jTNvTPRAQCfmgegD0CtyYbTo0eOo5y7qEE5N1UqnHR8DQtqEF2VbHFo4bRQv1dq5PgGmLmLsX0OwtYF9mfC70vIbnkkxwEcm97i4e4FtQfLLkRXOdNwPtZ1/F24GIPkLofPOz2zywabf2J/IXG62peHAqgWXs5eeQfAo0IytcpvM3FAZjuBDYCA18Iem/zB8idncGHPQwOkn+bX+67dmVtGey5ndndl+/WJpYrFUVWA5QqvCrCc4T8ALHc4LDgHlHByBlnEGEq0/OnwqkqN5k/M7f7/+kf0BWq4KtaMVcYSAAAAAElFTkSuQmCC">
+					</a>
+				</li>
+				<li>
+					<a href="">
+						
+						<span class="twitter"></span>
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAACsklEQVRIie2US2yMURTHf+ebtmYw03q1nekYVLAQ8VqoCrogKhFCsKgEiUZSkYhWhTSkNhqiXZB0gY2FRlhgYdN4pPFcEDbdiEg6z7ZItMarnbnHYmaYl0msWPjv7j3/x7nnu9+F//jbkD8VeMLtE21Ej4E2AD4gAHJV4/GO0tHS+GhZdKNaZknQ3XUqJ8AXaTlfEh1rfTPvwvffmuunewg1ecpvgWnAe2NsdSHv2SCA9bOsiCpN3yeXXJ/+7qgzX4CN6DGEGoUBMbpuzJLJorIe1A9UAxMEHli22JaU5leAoMAoymbHePylL9S6KjdCGwAso/v83q57Q5XnPvurzt0VlcYkwW5gQnll9GJKUZShF+1B5SAwV8U88kVanqqRS2riD4EQMBvAOeJ6mC5zfnT2jU75BKBBd+eeYKLZ3IBvtm/H7TH7YpDVAKqsRHSl2Kx0Gv0L28fS18MzhkvsMQcCUdLMM0cEOMYdrWI4pfAEQGEYuKUwAPold2QJTIo5vEl+JLuWNSKpVuFk6moJFAXcnduyu8qGQdcmL+SL7FrGCb4WfWkCfZy2NbVqqHlFIfNEgOxOnuBOwYB35d3RgNu1RlUaUZ4BWIajhcy94cP1ArXAoMF5s2AAwMxI9JqItiEsTuzIVm/kSF0+c0+4ZbpgXQZQ5XTY057znXICjCluAl4DjtSeqLlSMXikPJ03Z+hQhQ3uA1WgvUGPvztfEzkBIW/Hh4Cns95SXaaiZwAD4isxXAFAEV+keUcsXvQKWAT0x5FdyI14voCMt2i57i8eDE1zwfh8y9JNwAGgDPiA6AlRKQX2KixIKLS32F688+3UMyP5zDMCZoZbNih0CCz9HfkX1K/QFnS7epB2U4iZ81zPCjXXGpHtwBoQH2gZMASEUJ4L3HZ+dPZl/83/8e/iB6Tt+xNJrmVtAAAAAElFTkSuQmCC">
+					</a>
+				</li>
+
+				<a href="">
+					<span class="instagram"></span>
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAB7UlEQVRIie2UvW4TQRSFv+us3QAvgMOmRXLcEToK9/YjkGfwugCiJPzJP5DC8Stg6OhQaPMACUUk2xKtHeAFMBKyHR8KdsVmvR4HaHOq0cydc+aeMzNwjRWwtEm/H1QENYMt4MYKjh/ACbL2qNg+Wing96pNzHb+6bSmxrDQ2Vsq4PeDCvABmID25eXend89+OYivfP50W2bzR6CXgI5ZJV4J168OLQFsKejzcODK516Nn0PmmP2DNHCFADpAgb3AOR5b5OdxTKBS55rDiatZbs2m7b4U7MoANwEiNvi96pNYCcRVglTaWNQbQwLnQexgwDcihdmXO37/aASBj4BPZaXzcvL5sGeABPJdv1ereziSHZwCY5MXvuDwNI8T8LZQZSJZebdhTXTm3C4lVy7skCEeSa38F4uJhbt1f8InALYxXR7YWPWorlPLgJnBsjamEqIF/4gQGvZrn5OLZO1baTnACa1XRTODkbF9pGZGkAO0bLZ9GvG4wtSE8gJ6sNi5+PfCIzh9/OPJoaFzh6yCnAcro+BY5PK55uH+1Hd+lmQD4ff44RJi06BUuj5q3gnOK4ihJlIEccSgRTPV31262dB3pXJwvXbGFTrku26SJdBUI/blioA4Pdq5fCF3if8nxwYAycmtVcFfo1U/ALjC8lUSmRLgQAAAABJRU5ErkJggg==">
+				</a>
+			</li>
+				<li><a href="">
+					
+					<span class="sms"></span>
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAyElEQVRIie2SsRGCMBiF3xPGwAYmQSsncAMqYQacAQq11R2s4FxEGt3jt9B4eHBGTELFV+VP7t6X3AswoYFqEVWblZAHAIFh5p0iyXVZngFgpnaF3FkIB4BAyL0a/NbBHACauJiBkH/TwzoVlQW0XuCKSWAmCOtUXqX9NA8W2MD/dtgsCg6Z+xi1A+1tTAVOGLVkAcDokq2lliM0H0DDrU/wtIicAHgm4SSTPoEq2QMlb+JyayB50+3AYnhXYDn8g7DKcifBrnkAcaQ9hZzFW+4AAAAASUVORK5CYII=">
+					Contact
+				</a>
+			</li>
+			</ul>
+		</header>
+
+		<div class="hero">
+		<div>
+			<h1>Hello! <br> I am Shruti.</h1>
+			 <a href="">
+				<span class="plug"></span>
+				I am a web developer
+
+			 </a>
+		</div>
+			<img src="\img\key1.jpg" alt="key">
+
+		</div>
+
+		
+	</div>
+	<div class="page-divide">
+		<div class="divide"></div>
+		<div class="divide-line right"></div>
+	</div>
+	
+	<div class="wrapper">
+
+		<section>
+			<div class="section-title">
+				<h1>About Me</h1>
+				<small>Hey!! I am Shruti Beladia and Currently Studying Engineering at Chitkara University,Punjab.
+
+				  I have Sucessfully Completed many Online Courses about Logo design , Canva design , Web design from Esteemed Learning Platforms.I am Currently Aspiring to become an insightful and Sucessful Engineer and a Better Contributer to the Society. </small>
+			</div>
+			<div class="vid-wrapper" style="background-image:url(img/pic6.jpg)">
+				
+
+			</div>
+		</section>
+
+	</div>
+
+	<div class="page-divide">
+		<div class="divide"></div>
+		<div class="divide-line left"></div>
+	</div>
+
+	<div class="wrapper">
+		<section>
+			<div class="section-title">
+				<h1>My Skills</h1>
+				<small>We see all types of projects as if they are ours.This bring us close to the client project bringing more commitment.</small>
+			</div>
+			<div class="bar">
+			<style>
+				* {box-sizing: border-box}
+				
+				.container {
+				  width: 100%;
+				  background-color: #ddd;
+				}
+				
+				.skills {
+				  text-align: right;
+				  padding-top: 5px;
+				  padding-bottom: 5px;
+				  color: white;
+				}
+				
+				
+				.html {width: 90%; background-color:rgb(136, 255, 8);}
+				.css {width: 80%; background-color:rgb(136, 255, 8);}
+				.js {width: 65%; background-color:rgb(136, 255, 8);}
+				.php {width: 60%; background-color:rgb(136, 255, 8);}
+				.python {width: 60%; background-color:rgb(136, 255, 8);}
+				.logo {width: 90%; background-color:rgb(136, 255, 8);}
+				</style>
+	
+				
+				<p style="color:#fff">HTML</p>
+				<div class="container">
+				  <div class="skills html">90%</div>
+				</div>
+				
+				<p style="color:#fff">CSS</p>
+				<div class="container">
+				  <div class="skills css">80%</div>
+				</div>
+				
+				<p style="color:#fff">JavaScript</p>
+				<div class="container">
+				  <div class="skills js">65%</div>
+				</div>
+				
+				<p style="color:#fff">c++</p>
+				<div class="container">
+				  <div class="skills php">60%</div>
+				</div>
+
+				<p style="color:#fff">Python</p>
+				<div class="container">
+				  <div class="skills python">60%</div>
+				</div>
+				<p style="color:#fff">Logo design</p>
+				<div class="container">
+				  <div class="skills logo">90%</div>
+				</div>
+			</div>
+				
+			
+		</section>
+	</div>
+	<div class="page-divide">
+		<div class="divide"></div>
+		<div class="divide-line right"></div>
+	</div>
+
+	
+	<div class="container-fluid pt-5" id="service">
+        <div class="container">
+            <div class="service-h4 position-center d-flex align-items-center justify-content-center">
+                
+                <h1 class="position-center text-uppercase text-primary " style="text-align:center">My Services</h1>
+				<br>
+            </div>
+            <div class="row pb-3">
+                <div class="service-box col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-black mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Web Design</h4>
+                    </div>
+                    <p>Having a Unique website design is important part of the branding and marketing process of your business.</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="service-box col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Development</h4>
+                    </div>
+                    <p>Our new fangled approach to Development is directed creating and building deep love for your website .</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="service-box col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+						<img src="https://img.icons8.com/material-sharp/48/000000/windows10-personalization.png"/>
+                        <h4 class="font-weight-bold m-0">Logo Design</h4>
+                    </div>
+                    <p>Having an attractive logo design makes client attract your product more.</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="service-box col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <img src="https://img.icons8.com/material-rounded/48/000000/ms-powerpoint.png"/>
+                        <h4 class="font-weight-bold m-0">Powerpoint</h4>
+                    </div>
+                    <p>Presentation is most powerful blueprint of that product model.</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="service-box col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <img src="https://img.icons8.com/material/48/000000/ms-word--v1.png"/>
+                        <h4 class="font-weight-bold m-0">Ms Word</h4>
+                    </div>
+                    <p>Customize your text with Ms word . It makes text to be organised in perfect manner. </p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="service-box col-lg-4  col-md-7 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-edit service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Content Creating</h4>
+                    </div>
+                    <p>Content is all about creative ideas which makes look product more attractive and more reachable to your clients . </p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="page-divide">
+		<div class="divide"></div>
+		<div class="divide-line left"></div>
+	</div>
+
+	<div class="wrapper">
+		<section>
+			<div class="contact-grid">
+				<div class="form-wrapper">
+               <h2><span>Let</span>s talk ?</h2>
+			   <small>Don't wait until tomorrow and learn how to start leveraging your business.</small>
+
+			   <div class="form-progress">
+				<div class="progress active">
+					<div>
+						<span></span>
+						<span>1</span>
+					</div>
+				</div>
+				<div class="progress">
+					<div>
+						<span></span>
+						<span>2</span>
+					</div>
+				</div>
+				<div class="progress">
+					<div>
+						<span></span>
+						<span>3</span>
+					</div>
+				</div>
+			   </div>
+			    <div class="form">
+					<form  action="">
+						<div class="form-group">
+							<input type="text" placeholder="Email@example.com" class="form-control">
+						</div>
+						<div class="form-group">
+							<input type="text" placeholder="Email@example.com" class="form-control">
+						</div>
+						<div class="form-group">
+							<input type="text" placeholder="Email@example.com" class="form-control">
+						</div>
+						<div class="form-group">
+							<button type="button" >Next</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="contact-img" style="background-image: url(img/pic9.jpg) "></div>
+		</div>
+			</div>
+				
+		</section>
+	</div>
+
+	<div class="wrapper">
+		<footer>
+			
+		</footer>
+	</div>
+</body>
+</html>
