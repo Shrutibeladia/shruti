@@ -24,7 +24,11 @@ a{
 }
 body{
     background:var(--bg);
+    position: relative;
 
+}
+#menu-toggle{
+  display:none ;
 }
 
 .wrapper{
@@ -63,6 +67,17 @@ header li{
     text-decoration: #fff;
    
     
+}
+header label{
+  font-size: 1.4rem;
+  color: var(--main);
+  border:2px solid var(--main);
+  height:40px;
+  width:40px;
+  display:grid;
+  place-items: center;
+  border-radius: 3px;
+  display: none;
 }
 
 header li:first-child{
@@ -227,6 +242,7 @@ header li:last-child a span{
   grid-template-columns:55% 47% ;
    grid-gap:3rem;
    align-items: center;
+   padding-bottom: 2rem;
 
 }
 .form-wrapper h2{
@@ -246,6 +262,13 @@ header li:last-child a span{
 
 .form-group{
   margin-bottom: 1rem;
+  background-color: #fff;
+
+}
+.form-g{
+  margin-bottom: 1rem;
+  box-sizing: 50px;
+  
 }
 
 .form-control{
@@ -319,4 +342,73 @@ header li:last-child a span{
   position: absolute;
   left: 63%;
 
+}
+
+footer{
+   background: var(--bg-accent);
+   color: #fff;
+   padding:2.5rem 0rem;
+}
+.footer-grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr) ;
+  grid-gap:3rem;
+}
+.about h3{
+   font-size: 2.2rem;
+   color:var(--main);
+   font-weight: 600;
+   margin-bottom: .5rem;
+}
+.about small{
+  display:inline-block;
+  margin: 1rem 0rem;
+  line-height: 1.5rem;
+}
+.social{
+  display:flex ;
+  justify-content:space-between ;
+}
+.social span{
+   font-size:1.7rem;
+   color: var(--main);
+}
+.links h3{
+   font-size: 1.1rem;
+   font-weight: 600rem;
+   margin-bottom:.5rem;
+
+}
+.links ul{
+  margin-bottom: 1.5rem;
+
+}
+.links li{
+   margin-bottom: .5rem;
+   font-size: .85rem;
+}
+.links li span{
+  color: var(--main);
+  font-size: 1.3rem;
+}
+
+.link button{
+  border:3px solid var(--main);
+  background: transparent;
+  color: var(--font);
+  padding :.5rem 1rem;
+}
+
+.copyright{
+  padding:1rem 0rem;
+  text-align: right;
+  color:var(--font);
+  font-size: .8rem;
+}
+
+@media only screen and (max-width: 1024px) {
+.wrapper {
+ width: 90% ;
+    
+  }
 }
