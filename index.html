@@ -15,37 +15,43 @@
 </head>
 <body>
  
-	<div class="wrapper">
-
+	<div class="wrapper" id="home-test">
+          <input type="checkbox" id="menu-toggle">  
 		<header>
 			<h3>PORT <small>folio</small></h3>
-			<ul>
-				<li text-color:white><a href="">Home</a></li>
-				<li><a href="">About Me</a></li>
-				<li><a href="">My Skills</a></li>
-				<li><a href="">Services</a></li>
+			<div class="main-menu">
+				<ul>
+					<li><a href="#home-test">Home</a></li>
+					<li><a href="#about-test">About Me</a></li>
+					<li><a href="#skill-test">My skills</a></li>
+					<li><a href="#service">Services</a></li>
+					<li><a href="#contact-test">Contact</a></li>
+				</ul>
+			</div>
 
-				<li>
-					<a href="">
+
+				<li class="hide-sm">
+					<a href="#service">
 						
 						<span class="search"></span>
-						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAACxElEQVRYhe2VzUtUURjGf++9M9rHpsiZQqMiWuQMbURoa9HHrkyYfyCniT5AiIKIFi41iWgT5GT/gEjpSqiolkVtKh0jWlhh5UzQyjC992nhlcpGu/dWtqhndbnnPO/zu+c99xz4r78si+0cydWkWNNqRquwJtDGoOQbk/9Y2GCZjzfJ9n/+7QDpUr5NvtODaetPpr40ODOZKd74PQDqdOpKE12GzgRvniDr87DbydmpcQBLrNjiGXuAdmBHMK+73NhwDuv0fwmgbrRwIQiflqyjkqkvVis6D5suTRwVugTUAt3lTPFsbIB0Kd8m2QAwLWN/pbF4PxR0Kd9ismGg1rBDk5nem9+OO6HSR3I18p0eAMk6woYDVBqv3TM4BSDUw6NCMjJAijWtwYZ7UsnUF8OGz2uy8eNVsGfAttRK/2BkAIxDAIhri/Z8SX+/J/w+AHOsNToANAF4OHcihwdKyG4BSNYcB6AewMV9FRdg1vUCrxriAMQ/MQP57ur5Gt+1MByA7D2Ah7cpLkByZirw2tvIAGZ6AOCavzcugGfOPgChh5EBfBgKHttRZ9i2fZVyLuIwgElD3w6FKlaZsgHBOLAjXZo4GjU/Nbb2mEEWeFH+5AxGBqC5d8aVOgCELtWV8i1hw+vGCrtMughI4jTNvTPRAQCfmgegD0CtyYbTo0eOo5y7qEE5N1UqnHR8DQtqEF2VbHFo4bRQv1dq5PgGmLmLsX0OwtYF9mfC70vIbnkkxwEcm97i4e4FtQfLLkRXOdNwPtZ1/F24GIPkLofPOz2zywabf2J/IXG62peHAqgWXs5eeQfAo0IytcpvM3FAZjuBDYCA18Iem/zB8idncGHPQwOkn+bX+67dmVtGey5ndndl+/WJpYrFUVWA5QqvCrCc4T8ALHc4LDgHlHByBlnEGEq0/OnwqkqN5k/M7f7/+kf0BWq4KtaMVcYSAAAAAElFTkSuQmCC">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAFPklEQVRoge2ZX2xTVRzHv7/bdgwtMEhoWWQiCRqSEte6xGiiUNOWMVwy/vqC8ZUQXfQBgw8ahz4hL2qMIeHJRI0GCEEYjHGHBR5QJq6wTEIUUEG3diAhjDHbe8/Ph2567+297T23m85kn7d+7+98f+e7nnvuPR0wwwxTAlUzuHm4qV7TxVoisQpQIgAvATB3/PIdAL8AGADxKQ01R9Oh3qFqJ+yEpyDJwWgchO0grAHgczlMA6FLAe3uDvWd9tK3HFJBmnNPLNOZPwK4ucqmx3T42k+Gz1+pxsfi6Y5kNvYSwB8DeHCSeo8QeNuJ8IVPJ8PMVZBUtvEdBr3l4HAJgg8RFFXz6TcCOm4AAPyBBtbEQ0xIgUUbiJY72O9Uw5kOT7M3TaMCyVzsXTC/aTPwnBD8Rk/9ha/dNEpkY08T+D0Az9hcrjpM2SDjy+kTi5wH0K6GMntBYKluDErlYlsZ/AGAGvMlvNgTznwm5WfAMUjxxhYZmO+JW0xifU/o4hmvDQFgdS62UjAfBLDAII8AeqMa7r/qxVNxulDcnUwh8pMRAgC6Q32nSaENAAoGOQj2fejV0zZIcjAat9li2ycjxAQnFvadAuhVk0h4PpF7/FkvfvbfCGG7RflWDWX2emlQDjXUtweEXrPqe92LV0mQ5uGmehBM3wYptEP6xnYDgVnnHSaJuSWRXRGWtSoJouliLQC/QfqhuAymhvHt+7JB8ivkb5H1KQlSfAE0wPyV9OwkIeCQuSfish4294gSMTdRVFlTWQRg6sGMiFOtEzZBeImpiU9clzWVRSjiV5NAWOJQ6ojdrjXH+EFn7XdZU1mY9d8s0lzbwjI4PhAnKJBW1eHLDbN9Qes8CraFZbALctf4oRa19bKmsoyJ+9Yew7IedkF+NhXoSoOsqfQkhPKwWeGstIeNNmCyJKRkTWUhWHvQ97IeJUGYyXyeZtEma+oBSw86KWtQEkRX/J0AtH88aXnxJXJqSA3FEgAeM0h5LgTSsj4lQdKh3iEQuowaKdgFru6nI1sYxMS7LOoXPYvP3ZK1st1+FdBucz88mcrFtsqaVyI53PgygCaTSPy+Fy/Hv3IqGz3KgPHlraAQJSfrN6nEYONzpNBxAAGD/Lkazmzx4ud8QoSvHcCIQQoI5oOp4dgqpzFuSQ5G46TQfphD3AwIes2rp2OQk+HzVwi8zSIvYMEnktnYNk/3DIOSucZXoKAb5vM6ALoU/CN/R9pzYnSlgmQ22gHgbZtJfadA7OhedNHVVpkaiiXGb+wmpxoCjhVG6zakl6bH3HhaxlbGMUyRywQcEoDq8/mu58XYDQCoUWoX67reMP6wa4N5i3WEiQ4vGM5v2hcZyLupn8D18khko1sI2AMgKNPAE4QjgTsjm449+tOfbodUfPudoPjjmd4IRqe32f0NA9gHoLtMRWthXnB/y4/LZrk1dR0EANRw/1V1UaaVSaxkosMwvgFUhMdA9KUQ/JQazrygjda1AdzlXI7WwpzgAbdhqnpaJ7Irwgr5W8CIMyMCwiMoHop0Am4xYRCMXgJ9UzNLO9JZ13/bOD5+LV7rf+D2QYDWlAnUGbg7srHSMpvyQ1MlNg9Eam4vDBwAo9W5iru00fnry+1m/3kQwG0YOq6NzlvnFGZaBAGqDzNtggDVhZlWQQC3YdB9Lz973dmGs/cnBKnt999gX2Qgr92r21x2awZWB2tGNxqFaRcEANJL02Pzb2ptIBxxKOmw/hN12i0tIw7LrEMNZ3Zaa6d1EKAkjG2I/w3xa/HaRDbq6eQ4wwxV8hcRhObO6txaNQAAAABJRU5ErkJggg==">
 					</a>
 				</li>
-				<li>
-					<a href="">
+				<li class="hide-sm">
+					<a href="https://twitter.com/i/flow/login">
 						
 						<span class="twitter"></span>
-						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAACsklEQVRIie2US2yMURTHf+ebtmYw03q1nekYVLAQ8VqoCrogKhFCsKgEiUZSkYhWhTSkNhqiXZB0gY2FRlhgYdN4pPFcEDbdiEg6z7ZItMarnbnHYmaYl0msWPjv7j3/x7nnu9+F//jbkD8VeMLtE21Ej4E2AD4gAHJV4/GO0tHS+GhZdKNaZknQ3XUqJ8AXaTlfEh1rfTPvwvffmuunewg1ecpvgWnAe2NsdSHv2SCA9bOsiCpN3yeXXJ/+7qgzX4CN6DGEGoUBMbpuzJLJorIe1A9UAxMEHli22JaU5leAoMAoymbHePylL9S6KjdCGwAso/v83q57Q5XnPvurzt0VlcYkwW5gQnll9GJKUZShF+1B5SAwV8U88kVanqqRS2riD4EQMBvAOeJ6mC5zfnT2jU75BKBBd+eeYKLZ3IBvtm/H7TH7YpDVAKqsRHSl2Kx0Gv0L28fS18MzhkvsMQcCUdLMM0cEOMYdrWI4pfAEQGEYuKUwAPold2QJTIo5vEl+JLuWNSKpVuFk6moJFAXcnduyu8qGQdcmL+SL7FrGCb4WfWkCfZy2NbVqqHlFIfNEgOxOnuBOwYB35d3RgNu1RlUaUZ4BWIajhcy94cP1ArXAoMF5s2AAwMxI9JqItiEsTuzIVm/kSF0+c0+4ZbpgXQZQ5XTY057znXICjCluAl4DjtSeqLlSMXikPJ03Z+hQhQ3uA1WgvUGPvztfEzkBIW/Hh4Cns95SXaaiZwAD4isxXAFAEV+keUcsXvQKWAT0x5FdyI14voCMt2i57i8eDE1zwfh8y9JNwAGgDPiA6AlRKQX2KixIKLS32F688+3UMyP5zDMCZoZbNih0CCz9HfkX1K/QFnS7epB2U4iZ81zPCjXXGpHtwBoQH2gZMASEUJ4L3HZ+dPZl/83/8e/iB6Tt+xNJrmVtAAAAAElFTkSuQmCC">
+						<img src="data:image/png;base64,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">
 					</a>
 				</li>
-
-				<a href="">
+                  <li class="hide-sm">
+				<a href="https://www.instagram.com/">
 					<span class="instagram"></span>
-					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAB7UlEQVRIie2UvW4TQRSFv+us3QAvgMOmRXLcEToK9/YjkGfwugCiJPzJP5DC8Stg6OhQaPMACUUk2xKtHeAFMBKyHR8KdsVmvR4HaHOq0cydc+aeMzNwjRWwtEm/H1QENYMt4MYKjh/ACbL2qNg+Wing96pNzHb+6bSmxrDQ2Vsq4PeDCvABmID25eXend89+OYivfP50W2bzR6CXgI5ZJV4J168OLQFsKejzcODK516Nn0PmmP2DNHCFADpAgb3AOR5b5OdxTKBS55rDiatZbs2m7b4U7MoANwEiNvi96pNYCcRVglTaWNQbQwLnQexgwDcihdmXO37/aASBj4BPZaXzcvL5sGeABPJdv1ereziSHZwCY5MXvuDwNI8T8LZQZSJZebdhTXTm3C4lVy7skCEeSa38F4uJhbt1f8InALYxXR7YWPWorlPLgJnBsjamEqIF/4gQGvZrn5OLZO1baTnACa1XRTODkbF9pGZGkAO0bLZ9GvG4wtSE8gJ6sNi5+PfCIzh9/OPJoaFzh6yCnAcro+BY5PK55uH+1Hd+lmQD4ff44RJi06BUuj5q3gnOK4ihJlIEccSgRTPV31262dB3pXJwvXbGFTrku26SJdBUI/blioA4Pdq5fCF3if8nxwYAycmtVcFfo1U/ALjC8lUSmRLgQAAAABJRU5ErkJggg==">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAFc0lEQVRoge2ZS2xUVRjHf9+ZGVpesbATWtgIBFkRSjubImU6oNFQMMq6TCmNLjQYQYkblqAG35KUAt24gRgKBpG+GKgh7RTElYiYGGnBjZZ3ed05n4sZcGaYtjNnWqgJv2SSOed85zv//9x7z+MOPOUp44LkE1zdF1ngt7JGRcPAbKAMmDpGWm4B/cCAqrZbI4eOL917PtfOORkJ90bKrbBDYIWrShcETsXRzV0V+07lEDs8S05vDJRY7xOBN0eLHUcU1a+8obmbotXbvOGChhX3cvcbM+4W3/0WpXp89OWHQlfx3aLXjlTtupKtPauR5JX44XHfSqMj3TOmXq85sOjAvcwWky08eTtNMBMAWnVlaPrH2VoeuSLh3ki5CrFsbRMENdYsbQs2n0mtfOSKWGEHE9cEgFhjt2dWphmp7osseKK3lMr3njVlnjVlAkdHiKwJ99TNS61IM+K3smZcBOaIp9IYDTYPRIPNA4I2jhSrPpOmNc2IitaMh8DxQFTDqWV/RvucMRhjENVWDIfjyK+BSfcHAO7fC5QaKwtFdDXCGpQZmR0DxjatjK1vBLBI00iDKJKmNdPIswUYuI3IzkD8zodHg99cz9J+PvlprTm9cZNab4sIm4DJ/4njJUUu5jjerNRCppHp+ShP4ZKxpvbBlBjq2xBGdZ2gVUBpMqYf6EbY31He1AF8EO6NHFShlcQGNF/StKZNszWxiDokvORZE4wGmwdCvQ3zkfhugWWj9Dkh1ja0B1suLO/ZUOo3tgcHMx0Vex/qz7qy58FtY01tNNg8sDJWv0xMvCcHEwAvqDE9od66qmiweUCxa4E7hQgpzIjIzrZg85lQb8N8K9qa7QEegZkipnXVmfrnOita+hA+K0RKIUYGEd9HAEh8d54mHjAzbrUJwPPb7QhZd7a54G5EtbWjvOlaqG9DOMfbaZg8VIdj9aHo4parqhxyTeNuxHA4IUTXOedIoiRyGE3mdJLjOrj1nwNITrGFsgzAM/zimsDZSHxa4DIA6rQGpKOJtUanFF9yTVHo9Ds2CBZg8o1rznqcO/pu3p+VFOH8Kz4kmeOOr8h5i1TAFbHPJ7+cdM+RQKyeBPCpWeSaw9mIiK5OfGG/a46HuUjkEOKrXXMU8ozU1pze+EzH0r0dwAnXJApdbZX7upafrStRpNY1TyFGZmrc2wJg1KwH/nbIMej3SSNAwPNtBUpcxRQ0a4nwTrg3Ut5W2fyHqn0VGMyj+z8Yao8t2fP7ir76ClV9qxAthU6/xSq0Lu/ZUNpZ2dLt80klwvHROil0WROv7Cjf++PK2Poyo3oQKC5ESObByoXZfmN7QrG6tceW7OkDVoRj9SFF1yFUYSkDQLgoqt0C+9sq93UBrOirr7AJE7NGyJ8TmUZu4HZKnC2YkzWxyKdewO5oX7ynE+gcLnj52bqSgOfbqqpvA0UO4z3Q+pBMI3/hftwtBt73e6YxFIscMsph8dlz9yZPGQCYdHuoVONmIaK1el9qFXV+sJNcTi1kGrkIzC8ovTJDoE6FOrUG/63Ewc9ikgfrMXqJKfyZWkx/r6XaPjajjD+itKWW04wkZ4//BVZ936WW04y0B1suMMJDOlEQtL2zcvdvqXWPrCOCfRcS2+oJihXr25pZ+YiR9oqWn1H9+vFoyh+BLzP/G4FhVnZvaO4mJuAtpnCyZOqNzdnashqJVm/ziu4Wva7QNb7S8qIzHrC12f4/hBH2Wkeqdl2J35qzCuELwOVV6lhhBT73bs15Mbq45epwQTmtTtWxhkU+4tuBV8ZMXm50WKPvdZXv+2m0wLyW2XBP3Tz1mTWiGlakDKUUYZq7zhSUmxj6gX5U2sXGDyWXg6c85UnyL0eG7IBa5BjvAAAAAElFTkSuQmCC">
 				</a>
 			</li>
-				<li><a href="">
+				<li class="hide-sm">
+					<a href="#contact-test">
 					
 					<span class="sms"></span>
 					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAyElEQVRIie2SsRGCMBiF3xPGwAYmQSsncAMqYQacAQq11R2s4FxEGt3jt9B4eHBGTELFV+VP7t6X3AswoYFqEVWblZAHAIFh5p0iyXVZngFgpnaF3FkIB4BAyL0a/NbBHACauJiBkH/TwzoVlQW0XuCKSWAmCOtUXqX9NA8W2MD/dtgsCg6Z+xi1A+1tTAVOGLVkAcDokq2lliM0H0DDrU/wtIicAHgm4SSTPoEq2QMlb+JyayB50+3AYnhXYDn8g7DKcifBrnkAcaQ9hZzFW+4AAAAASUVORK5CYII=">
@@ -53,6 +59,10 @@
 				</a>
 			</li>
 			</ul>
+			</div>
+			<label for="menu-toggle">
+				<span class="las la-bars"></span>
+			</label>
 		</header>
 
 		<div class="hero">
@@ -75,7 +85,7 @@
 		<div class="divide-line right"></div>
 	</div>
 	
-	<div class="wrapper">
+	<div class="wrapper" id="about-test">
 
 		<section>
 			<div class="section-title">
@@ -97,7 +107,7 @@
 		<div class="divide-line left"></div>
 	</div>
 
-	<div class="wrapper">
+	<div class="wrapper" id="skill-test">
 		<section>
 			<div class="section-title">
 				<h1>My Skills</h1>
@@ -182,7 +192,7 @@
                         <h4 class="font-weight-bold m-0">Web Design</h4>
                     </div>
                     <p>Having a Unique website design is important part of the branding and marketing process of your business.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                    
                 </div>
                 <div class="service-box col-lg-3 col-md-6 text-center mb-5">
                     <div class="d-flex align-items-center justify-content-center mb-4">
@@ -190,7 +200,7 @@
                         <h4 class="font-weight-bold m-0">Development</h4>
                     </div>
                     <p>Our new fangled approach to Development is directed creating and building deep love for your website .</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                    
                 </div>
                 <div class="service-box col-lg-4 col-md-6 text-center mb-5">
                     <div class="d-flex align-items-center justify-content-center mb-4">
@@ -198,7 +208,7 @@
                         <h4 class="font-weight-bold m-0">Logo Design</h4>
                     </div>
                     <p>Having an attractive logo design makes client attract your product more.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                    
                 </div>
                 <div class="service-box col-lg-4 col-md-6 text-center mb-5">
                     <div class="d-flex align-items-center justify-content-center mb-4">
@@ -206,7 +216,7 @@
                         <h4 class="font-weight-bold m-0">Powerpoint</h4>
                     </div>
                     <p>Presentation is most powerful blueprint of that product model.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                   
                 </div>
                 <div class="service-box col-lg-3 col-md-6 text-center mb-5">
                     <div class="d-flex align-items-center justify-content-center mb-4">
@@ -214,7 +224,7 @@
                         <h4 class="font-weight-bold m-0">Ms Word</h4>
                     </div>
                     <p>Customize your text with Ms word . It makes text to be organised in perfect manner. </p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                    
                 </div>
                 <div class="service-box col-lg-4  col-md-7 text-center mb-5">
                     <div class="d-flex align-items-center justify-content-center mb-4">
@@ -222,7 +232,7 @@
                         <h4 class="font-weight-bold m-0">Content Creating</h4>
                     </div>
                     <p>Content is all about creative ideas which makes look product more attractive and more reachable to your clients . </p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                    
                 </div>
             </div>
         </div>
@@ -235,7 +245,7 @@
 
 	<div class="wrapper">
 		<section>
-			<div class="contact-grid">
+			<div class="contact-grid" id="contact-test">
 				<div class="form-wrapper">
                <h2><span>Let</span>s talk ?</h2>
 			   <small>Don't wait until tomorrow and learn how to start leveraging your business.</small>
@@ -262,17 +272,17 @@
 			   </div>
 			    <div class="form">
 					<form  action="">
-						<div class="form-group">
+						<div class="form-group" >
+							<input type="text" placeholder="Name" class="form-control">
+						</div>
+						<div class="form-group" >
+							<input type="tel" placeholder="Phone-no." class="form-control">
+						</div>
+						<div class="form-group" >
 							<input type="text" placeholder="Email@example.com" class="form-control">
 						</div>
-						<div class="form-group">
-							<input type="text" placeholder="Email@example.com" class="form-control">
-						</div>
-						<div class="form-group">
-							<input type="text" placeholder="Email@example.com" class="form-control">
-						</div>
-						<div class="form-group">
-							<button type="button" >Next</button>
+						<div class="form-g">
+							<button type="button" style="background:rgb(136, 255, 8);" >Next</button>
 						</div>
 					</form>
 				</div>
@@ -283,12 +293,59 @@
 				
 		</section>
 	</div>
-
-	<div class="wrapper">
 		<footer>
-			<h1></h1>
-			
-		</footer>
+			<div class="wrapper"></div>
+			<div class="footer-grid">
+				<div class="about">
+					<h3>About</h3>
+					<small>Authentic and innovative .Built to the smallest detail with focus , usability and performance.</small>
+
+					<div class="social">
+						<span class="las la-instagram"><i class="fa-brands fa-instagram"></i></span>
+						<span class="las la-facebook"><i class="fa-brands fa-facebook"></i></span>
+						<span class="las la-linkedin"><i class="fa-brands fa-linkedin"></i></span>
+						<span class="las la-twitter"><i class="fa-brands fa-twitter"></i></span>
+					</div>
+				</div>
+				<div class="links">
+					<h3>Get in touch</h3>
+
+					<ul>
+						<li><span class="las la-phone"></span>+91-9426042949</li>
+						<li><span class="las la-envelope"></span>shrutibeladi21@gmail.com</li>
+						<li><span class="las la-map-marker"></span>
+						Chitkara University</li>
+					</ul>
+					<button class="btn"><span class="las la-sms"></span>Send a message</button>
+				</div>
+				<div class="links">
+					<h3>Our Services</h3>
+
+					<ul>
+						<li>Website Development</li>
+						<li>Building Application</li>
+						<li>Logo Design</li>
+						<li>Content Creation</li>
+					</ul>
+			</div>
+			<div class="links">
+				<h3>Quick links </h3>
+
+				<ul>
+					<li><a href="#home-test">Home</a></li>
+					<li><a href="#about-test">About Me</a></li>
+					<li><a href="#skill-test">My skills</a></li>
+					<li><a href="#service">Services</a></li>
+					<li><a href="#contact-test">Contact</a></li>
+				</ul>
+		</div>
 	</div>
+</footer>
+     <div class="wrapper">
+		<div class="copyright">
+			<p>&copy; About Company 2022. All rights reserved.</p>
+		</div>
+	 </div>
+	
 </body>
 </html>
